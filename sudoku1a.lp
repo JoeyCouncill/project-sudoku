@@ -16,6 +16,6 @@ sudoku(X, Y, N) :- initial(X, Y, N).
 :- sudoku(X, Y1, N), sudoku(X, Y2, N), Y1 != Y2.
 
 %each number appears only onc in each column
-:- sudoku(X1, Y, N), sudoku(X2, Y, N), X1 != X2
+:- sudoku(X1, Y, N), sudoku(X2, Y, N), X1 != X2.
 
 #show sudoku/3.
