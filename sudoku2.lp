@@ -18,7 +18,7 @@ sudoku(X, Y, N) :- initial(X, Y, N).
 :- sudoku(X1, Y, N), sudoku(X2, Y, N), X1 != X2.
 
 %cells are mapped to appropriate subgrid
-subgrid(X, Y, G) :- X = 1..9, Y = 1..9, G = 1+(((X-1)/3)*3(Y-1)/3).
+subgrid(X, Y, G) :- X = 1..9, Y = 1..9, G = 1+(((X-1)/3)*3+(Y-1)/3).
 
 %each number appears only once in each subgrid
 :- sudoku(X1, Y1, N), sudoku(X2, Y2, N), subgrid(X1, Y1, G), subgrid(X2, Y2, G), X1 != X2, Y1 != Y2.
