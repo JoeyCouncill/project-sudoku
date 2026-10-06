@@ -6,7 +6,7 @@
 
 % Your implementation please...
 %each cell(X,Y) contains one number N 1..9
-{sudoku(X, Y, N) : N = 1..9} = 1 :- X = 1..9, Y = 1..9.
+1 {sudoku(X, Y, N) : N = 1..9} 1 :- X = 1..9, Y = 1..9.
 
 %check that the initial values line up
 sudoku(X, Y, N) :- initial(X, Y, N).
